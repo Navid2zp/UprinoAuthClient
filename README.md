@@ -29,7 +29,7 @@ func main() {
     if token.Valid {
       fmt.Println("Hey,", tokenData.UserData.Username)
     } else {
-      fmt.Println("(I don't know you :(")
+      fmt.Println("I don't know you :(")
     }
 }
 ```
