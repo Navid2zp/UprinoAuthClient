@@ -44,4 +44,4 @@ func main() {
 
 ### Notes:
 - Login/Register/Password reset is only available on the authentication service and there is no API for that.
-- To login a user for your API key, send the user to `https://auth.uprino.com/login?api_key=YOUR-PUBLIC-API-KEY` and user will be redirected to your callback URL with the token.
+- To login a user for your API key, send the user to `https://auth.uprino.com/login?api_key=YOUR-PUBLIC-API-KEY` and user will be redirected to your callback URL with a token.
