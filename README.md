@@ -37,7 +37,7 @@ func main() {
 |      Arg      |          Description           |           Required         |
 |---------------|--------------------------------|----------------------------|
 |Token          |User token to check             |             YES            |
-|PublicKey      |Only for your public call       |             YES*           |
+|PublicKey      |Only for your public calls      |             YES*           |
 |PrivateKey     |Only for private calls (backend)|             YES*           |
 
 > *You should provide at least one of the keys.
