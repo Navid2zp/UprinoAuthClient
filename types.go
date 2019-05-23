@@ -8,15 +8,16 @@ type TokenCheck struct {
 	Checked    bool
 }
 
+type TokenUserData struct {
+	ID        int    `json:"id"`
+	Username  string `json:"username"`
+	Email     string `json:"email"`
+	FirstName string `json:"first_name"`
+	LastName  string `json:"last_name"`
+}
 type TokenCheckResponse struct {
-	Status   string `db:"status" json:"status"`
-	Message  string `db:"message" json:"message"`
-	Error    string `db:"error" json:"error"`
-	UserData struct {
-		ID        int    `db:"id" json:"id"`
-		Username  string `db:"username" json:"username"`
-		Email     string `db:"email" json:"email"`
-		FirstName string `db:"first_name" json:"first_name"`
-		LastName  string `db:"last_name" json:"last_name"`
-	}
+	Status   string        `json:"status"`
+	Message  string        `son:"message"`
+	Error    string        `json:"error"`
+	UserData TokenUserData `json:"user_data"`
 }
