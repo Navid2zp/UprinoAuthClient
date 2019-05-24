@@ -24,7 +24,6 @@ func (t *TokenCheck) Check() (TokenCheckResponse, error) {
 		return responseData, errors.New("no token specified")
 	}
 	req, err := http.NewRequest("GET", uprinoAuthURL, nil)
-	req.Close = true
 	if err != nil {
 		return responseData, err
 	}
